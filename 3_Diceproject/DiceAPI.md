@@ -18,6 +18,7 @@ the dot count can't become zero.
 
 - If uppeer bound is not a number and not an integer, throw an exception.
   `'upper bound must be an integer'`
+  Note: '1' is not casted to number, so an exception is thrown.
 
 - If the upper bound is not between 2 and 20, an exception is thrown:
 
