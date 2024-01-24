@@ -47,7 +47,7 @@
   - Roll the dice. Compare resulting text with dots converted to text.
   - Don't roll the dice. Compare the results to `'Not rolled yet'`.
 
-## Testing getters
+## Testing getters (is done in other tests)
 
 ### minimumValue
 
