@@ -24,12 +24,29 @@ the dot count can't become zero.
   - upper bound >20: `'upperbound too big'`
   - upper bound <2: `'upper bound too small'`
 
-  ### Methods
+### Methods
 
-  #### **roll()**
+#### **roll()**
 
-  - Rolls the dice.
-  - When rolled, the dot count will become a random number between 1 and then upper bound.
-  - Returns nothing.
+- Rolls the dice.
+- When rolled, the dot count will become a random number between 1 and then upper bound.
+- Returns nothing.
 
-  #### **toString()**
+#### **toString()**
+
+- Return dot count as a text. For example `'4'`.
+- If the dice hasn't been rolled yet, returns a text `'Not rolled yet'`
+
+### Getters
+
+#### **dots**
+
+- Returns the number of dots
+
+#### **minimumValue**
+
+- Returns the minimum value of dots. It should be 1.
+
+#### **maximumValue**
+
+- Returns the upper bound of the dice
