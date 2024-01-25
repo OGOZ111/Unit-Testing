@@ -6,7 +6,7 @@ describe("create a dice with no upper bound given", () => {
   const dice = new Dice();
 
   test("maximumValue is 6", () => {
-    expect(dice.maxmimumValue).toBe(6);
+    expect(dice.maximumValue).toBe(6);
   });
 
   test("mimnumValue is 1", () => {
@@ -25,7 +25,7 @@ describe("create a dice with an upper bound of 2-20", () => {
 
   test.each(testValues)("test upper bound %s", (ubound) => {
     const dice = new Dice(ubound);
-    expect(dice.maxmimumValue).toBe(ubound);
+    expect(dice.maximumValue).toBe(ubound);
     expect(dice.minimumValue).toBe(1);
     expect(dice.dots).toBe(0);
   });
@@ -43,8 +43,8 @@ describe("Test the exceptions", () => {
     [2.5, "upper bound must be an integer"],
   ];
 
-  test.each(testValues)("upper bound %s throws %s", (ub, text) => {
-    expect(() => new Dice(ub)).toThrow(text);
+  test.each(testValues)("upper bound %s throws %s", (ubound, text) => {
+    expect(() => new Dice(ubound)).toThrow(text);
   });
 });
 
@@ -74,6 +74,6 @@ describe("Testing the toString method", () => {
     expect(dice.toString()).toBe(`${dice.dots}`);
   });
   test("Dice not rolled", () => {
-    expect(dice.toString()).toBe("not rolled yet");
+    expect(dice.toString()).toBe("Not rolled yet");
   });
 });
