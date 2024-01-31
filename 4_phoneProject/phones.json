@@ -1,0 +1,22 @@
+[
+    {
+        "firstname": "Leila",
+        "lastname": "Hökki",
+        "phones": [
+            {"type" : "home", "number": "12345678"},
+            {"type" : "work", "number": "385739234"},
+            {"type" : "work", "number": "585830384"}
+
+        ]
+    },
+    {
+        "firstname": "Matt",
+        "lastname": "Smith",
+        "phones": [
+            {"type" : "home", "number": "495838242"},
+            {"type" : "mobile", "number": "044827422"},
+            {"type" : "work", "number": "998474732"}
+
+        ]
+    }
+]
