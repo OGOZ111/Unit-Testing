@@ -81,3 +81,11 @@ returns
   "number": { "type": "mobile", "tel": "044827422" }
 }
 ```
+
+### Test 3. type X
+
+returns []
+
+### Test 4. Missing parameter.
+
+If paramter is missing, throws an exception. 'missing parameter'
