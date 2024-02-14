@@ -282,3 +282,23 @@ describe("Testing getAllNumbers", () => {
     expect(register.getAllNumbers()).toEqual([]);
   });
 });
+
+describe("Testing getName", () => {
+  const register = new PhoneRegister(phones);
+
+  describe("Test 1 and 2", () => {
+    const testValues = [
+      ["585830384", { firstname: "Leila", lastname: "Hökki" }],
+      ["044827422", { firstname: "Matt", lastname: "Smith" }],
+    ];
+    test.each(testValues)("%s return %p", (number, result) => {
+      expect(register.getName(number)).toEqual(result);
+    });
+  });
+  test("Test 3. wrong number 000023", () => {
+    expect(register.getName("000023")).toBeNull();
+  });
+  test("Test 4, missing parameter", () => {
+    expect(register.getName()).toBeNull();
+  });
+});
